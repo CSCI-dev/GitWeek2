@@ -24,8 +24,14 @@ def FindWordCount(list, string):
 def ScoreFinder(players, scores, name):
     found = False
     for index in range(len(players)):
-        if players[index].lower() == name.lower() && found == False:
+        if players[index].lower() == name.lower() and found == False:
             print("OUTPUT", players[index], "got a score of", scores[index])
             found = True
     if(found == False):
-        print("OUTPUT player not found)
+        print("OUTPUT player not found")
+
+def Union(a, b):
+    for item in b:
+        if(not item in a):
+              a.append(item)
+    return a
