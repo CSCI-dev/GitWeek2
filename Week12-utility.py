@@ -42,3 +42,10 @@ def Intersection(a, b):
         if item in b and not item in intersection:
             intersection.append(item)
     return intersection
+
+def NotIn(a, b):
+    aNotB = []
+    for item in a:
+        if not item in b:
+            aNotB.append(item)
+    return aNotB
