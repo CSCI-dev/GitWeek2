@@ -12,4 +12,11 @@ def LoadFile(path):
 
 def UpdateString(string, insert, index):
     output = string[0:index] + insert + string[index+1:]
-    print(output)
+    print("OUTPUT" + output)
+
+def FindWordCount(list, string):
+    count = 0
+    for substring in list:
+        if substring == string:
+            count += 1
+    return count
