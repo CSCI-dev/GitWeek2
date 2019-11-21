@@ -7,5 +7,9 @@ def PrintOutput(str):
 
 def LoadFile(path):
     file = open(path, r)
-    print ("OUTPUT" + file.read().split("\n")
+    print ("OUTPUT" + file.read().split("\n"))
     file.close()
+
+def UpdateString(string, insert, index):
+    output = string[0:index] + insert + string[index+1:]
+    print(output)
