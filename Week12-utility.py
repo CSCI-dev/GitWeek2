@@ -35,3 +35,10 @@ def Union(a, b):
         if(not item in a):
               a.append(item)
     return a
+
+def Intersection(a, b):
+    intersection = []
+    for item in a:
+        if item in b and not item in intersection:
+            intersection.append(item)
+    return intersection
