@@ -20,3 +20,12 @@ def FindWordCount(list, string):
         if substring == string:
             count += 1
     return count
+
+def ScoreFinder(players, scores, name):
+    found = False
+    for index in range(len(players)):
+        if players[index].lower() == name.lower() && found == False:
+            print("OUTPUT", players[index], "got a score of", scores[index])
+            found = True
+    if(found == False):
+        print("OUTPUT player not found)
